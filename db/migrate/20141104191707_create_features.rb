@@ -4,6 +4,8 @@ class CreateFeatures < ActiveRecord::Migration
       t.string :title
       t.text :body
       t.string :author
+      t.string :feature_type
+      t.string :genre
       t.timestamps
     end
   end

@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20141104191707) do
     t.string   "title"
     t.text     "body"
     t.string   "author"
+    t.string   "feature_type"
+    t.string   "genre"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
