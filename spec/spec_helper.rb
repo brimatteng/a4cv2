@@ -11,6 +11,7 @@ RSpec.configure do |config|
   end
 
   config.order = :random
+
 end
 
 WebMock.disable_net_connect!(allow_localhost: true)

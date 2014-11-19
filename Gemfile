@@ -38,6 +38,7 @@ group :development, :test do
   gem "byebug" # Buhbye bug
   gem "dotenv-rails" # for .env files
   gem "factory_girl_rails" # Factories!
+  gem "faker"
   gem "pry-rails" # binding.pry
   gem "rspec-rails", "~> 3.0.0" #TESTING
 end

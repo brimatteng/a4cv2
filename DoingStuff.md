@@ -12,7 +12,7 @@ To do:
 
 - Securing an API
 
-------------------------------------
+=====================================
 
 - Versioning/Namespacing (Delayed until neccesary)
   - Subdomain api? (neccesary?) - probably not
