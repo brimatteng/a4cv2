@@ -28,7 +28,20 @@ module A4cv2
       generate.view_specs false
     end
 
-    config.action_controller.action_on_unpermitted_parameters = :raise
+    # Do not swallow errors in after_commit/after_rollback callbacks.
+    config.active_record.raise_in_transactional_callbacks = true
+
+    # For Cors stuff
+    config.middleware.insert_before "ActionDispatch::Static", "Rack::Cors" do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :put, :delete, :options]
+      end
+    end
+
+    # Not sure if I want this in a Rails- APi
+    # config.action_controller.action_on_unpermitted_parameters = :raise
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

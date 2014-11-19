@@ -3,6 +3,7 @@ source "https://rubygems.org"
 ruby "2.1.3"
 gem "rails", "4.1.6"
 gem "rails-api"
+
 # gem "airbrake"
 # gem "bourbon", "~> 3.2.1" # responsive sass framework
 # gem "coffee-rails" # for Coffeescript
@@ -17,12 +18,11 @@ gem "rails-api"
 # gem "title" # Title helper for Application views
 # gem "uglifier"  # for JS compiling
 
+gem 'rack-cors', :require => 'rack/cors' # For cross origin HTTP Requests
 gem "delayed_job_active_record" # For Delayed Jobs
 gem "email_validator" #Duh
 gem "recipient_interceptor" # Prevent accidentally sending to Emails from staging
-
 gem "newrelic_rpm", ">= 3.7.3" # For Tracking Rails HTTP Perfomance
-
 gem "pg" # POSTGRES!
 gem "rack-timeout" # A Timeout for Heroku (default 15s)
 gem "unicorn" # unicorn server
