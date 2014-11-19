@@ -18,6 +18,7 @@ gem "rails-api"
 # gem "title" # Title helper for Application views
 # gem "uglifier"  # for JS compiling
 
+gem 'annotate'
 gem 'rack-cors', :require => 'rack/cors' # For cross origin HTTP Requests
 gem "delayed_job_active_record" # For Delayed Jobs
 gem "email_validator" #Duh
